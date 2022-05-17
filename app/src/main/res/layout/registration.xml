@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="733dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="309dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="baskerville"
+            android:text="Readingplegia"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="Please Register here"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            android:ems="10"
+            android:fontFamily="@font/amiko"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="135dp" />
+
+        <TextView
+            android:id="@+id/genreDescription"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="Please select your preferred book genres (Select all that applies):"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="317dp"
+            android:layout_height="207dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History" />
+
+                <CheckBox
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sci-Fi" />
+
+                <CheckBox
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fantasy" />
+
+                <CheckBox
+                    android:id="@+id/d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mystery" />
+
+                <CheckBox
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cooking" />
+
+                <CheckBox
+                    android:id="@+id/f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Romance" />
+
+                <CheckBox
+                    android:id="@+id/g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thriller" />
+
+                <CheckBox
+                    android:id="@+id/h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finance" />
+
+                <CheckBox
+                    android:id="@+id/i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biography" />
+
+                <CheckBox
+                    android:id="@+id/j"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Art" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/passwordDescription"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="Please type a strong password that is over 8 characters long and contains each of the following:
+One uppercase &amp; lowercase letter, a digit 0-9 and one of the following characters @#$%^&amp;+="
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="317dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:fontFamily="@font/amiko"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="317dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:fontFamily="@font/amiko"
+            android:hint="Re-enter your password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="133dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@android:color/black"
+            android:text="Register"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="316dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id = "@+id/m_logout"
+        android:icon = "@drawable/m_logout"
+        android:title = "Log out"
+        app:showAsAction="always" />
+    <item android:id = "@+id/m_help"
+        android:icon = "@drawable/ic_help"
+        android:title = "Help"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/remove_bookmark"
+        android:icon = "@drawable/m_bookmark_remove"
+        android:title="Remove Bookmark"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemEmpty"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/gotobookmark"
+        android:icon = "@drawable/m_gotobookmark"
+        android:title="Go To Bookmark"
+        app:showAsAction="always" />
+    <item android:id = "@+id/bookmark"
+        android:icon = "@drawable/m_bookmark_add"
+        android:title = "bookmark"
+        app:showAsAction="always" />
+    <item android:id = "@+id/m_back"
+        android:icon = "@drawable/ic_back"
+        android:title = "back"
+        app:showAsAction="always" />
+    <item android:id = "@+id/m_forward"
+        android:icon = "@drawable/ic_forward"
+        android:title = "forward"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="309dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="baskerville"
+            android:text="Readingplegia"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:gravity="center"
+            android:text="A Voice-Controlled eReader for Mobility-challenged Persons"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/openbook"
+            android:layout_width="284dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="82dp"
+            android:autoSizeTextType="uniform"
+            android:text="Please open the book by tapping the cover:" />
+
+        <ImageView
+            android:id="@+id/bookcover"
+            android:layout_width="wrap_content"
+            android:layout_height="271dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:contentDescription="book cover"
+            android:src="@drawable/ic_baseline_broken_image_24" />
+
+        <TextView
+            android:id="@+id/booktitle"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:autoSizeTextType="uniform"
+            android:text="*Book Title*" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#03A9F4"
+        tools:ignore="BottomAppBar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

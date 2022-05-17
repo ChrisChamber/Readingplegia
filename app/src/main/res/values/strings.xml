@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Readingplegia</string>
+    <string name ="forgottenPasswordText"><u>Forgotten password? Click here:</u></string>
+    <string name ="registrationText"><u>First-time user? Register here:</u></string>
+    <string name ="history"><u>History</u></string>
+    <string name ="scifi"><u>Sci-Fi</u></string>
+    <string name ="fantasy"><u>Fantasy</u></string>
+    <string name ="mystery"><u>Mystery</u></string>
+    <string name ="cooking"><u>Cooking</u></string>
+    <string name ="romance"><u>Romance</u></string>
+    <string name ="thriller"><u>Thriller</u></string>
+    <string name ="finance"><u>Finance</u></string>
+    <string name ="biography"><u>Biography</u></string>
+    <string name ="art"><u>Art</u></string>
+
+    <string-array name="array_commands">
+        <item>Turn to next page: <b>"turn page"</b></item>
+        <item>Turn to previous page: <b>"turn back"</b></item>
+        <item>Bookmark page: <b>"bookmark page"</b></item>
+        <item>Go to bookmarked page: <b>"go to bookmark"</b></item>
+        <item>Remove the bookmark: <b>"remove bookmark"</b></item>
+        <item>Go to help screen: <b>"help"</b></item>
+        <item>Sign out of account: <b>"sign out"</b></item>
+    </string-array>
+</resources>

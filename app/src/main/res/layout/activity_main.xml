@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="309dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="baskerville"
+            android:text="Readingplegia"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="A Voice-Controlled eReader for Mobility-challenged Persons"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="64dp"
+                android:ems="10"
+                android:fontFamily="@font/amiko"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="140dp" />
+
+        <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="217dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Password"
+                android:fontFamily="@font/amiko"
+                android:inputType="textPassword"
+                tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="108dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@android:color/black"
+            android:text="Login"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="353dp" />
+
+        <TextView
+            android:id="@+id/forgottenpassword"
+            android:layout_width="306dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:text="@string/forgottenPasswordText"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="52dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:text="@string/registrationText"
+            app:layout_constraintEnd_toEndOf="@+id/forgottenpassword"
+            app:layout_constraintStart_toStartOf="@+id/forgottenpassword"
+            app:layout_constraintTop_toBottomOf="@+id/forgottenpassword"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+</LinearLayout>

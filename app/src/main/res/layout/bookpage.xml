@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="708.5dp"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="708.5dp"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.037" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pagenumber"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="right"
+        android:layout_margin="20dp"
+        android:text="Page number"
+        app:layout_anchor="@+id/fab"
+        app:layout_anchorGravity="top|center" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src ="@drawable/ic_mic"
+        android:id="@+id/fab"
+        app:elevation="0dp"
+        app:layout_anchor="@id/bar"
+        app:backgroundTint="#03A9F4" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#03A9F4"
+        tools:ignore="BottomAppBar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="139dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="309dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="baskerville"
+            android:text="Readingplegia"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="A Voice-Controlled eReader for Mobility-challenged Persons"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="264dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="102dp"
+            android:text="Please select a book genre from the list below:" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/history"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/b"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/scifi"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/fantasy"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/mystery"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/cooking"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/f"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/romance"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/g"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/thriller"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/h"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/finance"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/biography"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/alike"
+            android:text="@string/art"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="140dp" />
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
